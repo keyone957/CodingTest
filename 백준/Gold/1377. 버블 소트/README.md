@@ -1,3 +1,6 @@
+![Image](https://github.com/user-attachments/assets/2822450c-d7eb-4c30-8c28-93212cc71f3a)
+
+
 # [Gold II] 버블 소트 - 1377 
 
 [문제 링크](https://www.acmicpc.net/problem/1377) 
