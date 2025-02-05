@@ -1,4 +1,4 @@
-# [Silver III] 두 수의 합 - 3273 
+# [Silver III] 두 수의 합 - 3273 ==> 투포인터 사용
 
 [문제 링크](https://www.acmicpc.net/problem/3273) 
 
