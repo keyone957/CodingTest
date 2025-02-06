@@ -1,4 +1,4 @@
-# [Silver II] 에디터 - 1406 
+# [Silver II] 에디터 - 1406 ==> 연결리스트 사용 
 
 [문제 링크](https://www.acmicpc.net/problem/1406) 
 
