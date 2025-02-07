@@ -1,5 +1,6 @@
 # [Gold IV] 오큰수 - 17298 
 ![Image](https://github.com/user-attachments/assets/ad6bdc0d-2636-47b4-a441-626deebebe33)
+
 [문제 링크](https://www.acmicpc.net/problem/17298) 
 
 ### 성능 요약
