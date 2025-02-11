@@ -2,6 +2,7 @@
 
 ![Image](https://github.com/user-attachments/assets/28d52bfa-53b5-4681-ada4-547d2df1f72f)
 ![Image](https://github.com/user-attachments/assets/ad9406a5-be25-4609-82d0-e76fe9e039a8)
+
 다 익으려면 6일 걸림 
 
 중요한거 =⇒ 시작점이 여러개인 경우는 어케 할까?
