@@ -3,9 +3,14 @@
 ![Image](https://github.com/user-attachments/assets/28d52bfa-53b5-4681-ada4-547d2df1f72f)
 ![Image](https://github.com/user-attachments/assets/ad9406a5-be25-4609-82d0-e76fe9e039a8)
 다 익으려면 6일 걸림 
+
 중요한거 =⇒ 시작점이 여러개인 경우는 어케 할까?
+
 —>입력 받을 때 큐에다가 시작점을 여러 개 그냥 push후에 bfs를 실행하자.
-거리를 나타내는 배열을 하나 선언하고 입력할 때 마다 0을 만나면 dist배열을 -1로 값을 초기화 시켜줌 (visit 배열 차피 안쓰고 dist배열로 -1일때는 방문을 안 했다는 뜻이므로 -1로 초기화를 우선 시켜준다)
+
+거리를 나타내는 배열을 하나 선언하고 입력할 때 마다 0을 만나면 dist배열을 -1로 값을 초기화 시켜줌 
+
+(visit 배열 차피 안쓰고 dist배열로 -1일때는 방문을 안 했다는 뜻이므로 -1로 초기화를 우선 시켜준다)
 
 [문제 링크](https://www.acmicpc.net/problem/7576) 
 
