@@ -1,3 +1,7 @@
+![Image](https://github.com/user-attachments/assets/b2a07422-f2cf-4d03-bbf7-e14e9c57a736)
+
+![Image](https://github.com/user-attachments/assets/ebdf1cc3-db29-4299-bda6-ea47792ae599)
+
 # [Silver I] 곱셈 - 1629 
 
 [문제 링크](https://www.acmicpc.net/problem/1629) 
