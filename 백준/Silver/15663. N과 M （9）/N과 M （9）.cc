@@ -33,7 +33,7 @@ void func(int k)
 		if (!isUsed[i] &&temp != inputArr[i])
 		{
 			arr[k] = inputArr[i];
-			temp = inputArr[i];
+			temp = arr[k];
 			isUsed[i] = 1;
 			func(k + 1);
 			isUsed[i] = 0;
