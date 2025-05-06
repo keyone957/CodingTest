@@ -1,5 +1,7 @@
 # [Bronze I] 부녀회장이 될테야 - 2775 
 
+![Image](https://github.com/user-attachments/assets/232d957a-6ae9-4822-be07-7cbd559c1e3c)
+
 [문제 링크](https://www.acmicpc.net/problem/2775) 
 
 ### 성능 요약
