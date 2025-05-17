@@ -12,15 +12,12 @@
 #include <string>
 #include <vector>
 using namespace std;
-int n;
-//long long d[1500001];
-//long long t[1500001];
-//long long p[1500001];
 int main()
 {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
+	int n;
 	long long d[1500001];
 	long long t[1500001];
 	long long p[1500001];
