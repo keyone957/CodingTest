@@ -12,7 +12,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-vector<pair<int, int>> graph[1000];
+vector<pair<int, int>> graph[1001];
 vector<int> minDist;
 int node, edge, endNode;
 void bfs(int startNode)
@@ -52,25 +52,32 @@ int main()
         cin >> start >> end >> dist;
         graph[start].push_back({ end,dist });
     }
+    //1. 일단 먼저 파티 장소부터 다른 도시들의 최단 경로를 구해줌
     minDist.resize(node + 1, 1e9);
 
     bfs(endNode);
-    vector<int> distFromEnd = minDist; // X→각 마을
-
-    // 2. 각 노드에서 endNode까지의 최단거리 (왕복 "가는 길")
-    vector<int> distToEnd(node + 1, 1e9);
-    for (int i = 1; i <= node; ++i) {
-        minDist.assign(node + 1, 1e9);
+    // 따로 벡터에 저장
+    vector<int> partyMinDist = minDist;
+    //2. 파티하는 도시 제외 나머지 도시의 최단거리를 구해줌
+    vector<int> cityToPartyMinDist(node + 1, 1e9);
+    
+    for (int i = 1; i <= node; i++) 
+    {
+        //minDist.resize(node + 1, 1e9);
+        fill(minDist.begin(), minDist.end(), 1e9);
         bfs(i);
-        distToEnd[i] = minDist[endNode]; // i→X
+        cityToPartyMinDist[i] = minDist[endNode]; //그리고 저장할때는 각 노드에서 파티하는 도시까지의 최단거리를 저장해줌.
+
     }
 
     // 3. 왕복 시간 최댓값 찾기
     int answer = -1;
-    for (int i = 1; i <= node; ++i) {
-        if (distToEnd[i] < 1e9 && distFromEnd[i] < 1e9) {
-            int roundTrip = distToEnd[i] + distFromEnd[i];
-            answer = max(answer, roundTrip);
+    for (int i = 1; i <= node; i++) 
+    {
+        if (cityToPartyMinDist[i] < 1e9 && partyMinDist[i] < 1e9)
+        {
+            int dist = cityToPartyMinDist[i] + partyMinDist[i];
+            answer = max(answer, dist);//최종으로 왕복시간 더해서 가장 큰 값을 answer에 저장 및 출력
         }
     }
     cout << answer << '\n';
