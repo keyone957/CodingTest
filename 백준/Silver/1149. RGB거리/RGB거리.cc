@@ -25,13 +25,11 @@ int main()
 	cin >> count;
 	for (int i = 1; i <= count; i++)
 	{
-
 		int r, g, b;
 		cin >> r >> g >> b;
 		R[i] = r;
 		G[i] = g;
 		B[i] = b;
-
 	}
 	dp[1][0] = R[1];
 	dp[1][1] = G[1];
