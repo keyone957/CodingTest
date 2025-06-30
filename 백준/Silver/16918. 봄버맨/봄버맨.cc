@@ -51,7 +51,7 @@ void allBomb()
 }
 void bomb3(char tempBoard[201][201])// 폭탄으로 바꾸기
 {
-    
+    allBomb();
     for (int i = 0; i < R; i++)
     {
         for (int j = 0; j < C; j++)
@@ -103,22 +103,18 @@ int main()
         for (int i = 0; i < R; i++)
             for (int j = 0; j < C; j++)
                 temp[i][j] = board[i][j];
-        allBomb();
         bomb3(temp);
         print();
     }
     else if (N % 4 == 1)//5초일때?
     {
-        for (int i = 0; i < R; i++)
-            for (int j = 0; j < C; j++)
-                temp[i][j] = board[i][j];
-        allBomb();
-        bomb3(temp);
-        for (int i = 0; i < R; i++)
-            for (int j = 0; j < C; j++)
-                temp[i][j] = board[i][j];
-        allBomb();
-        bomb3(temp);
+        for (int a = 0; a < 2; a++)
+        {
+            for (int i = 0; i < R; i++)
+                for (int j = 0; j < C; j++)
+                    temp[i][j] = board[i][j];
+            bomb3(temp);
+        }
     
         print();
     }
