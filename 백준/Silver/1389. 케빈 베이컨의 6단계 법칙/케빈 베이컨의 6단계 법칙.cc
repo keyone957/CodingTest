@@ -1,84 +1,41 @@
-#include <algorithm>
-#include <deque>
-#include <functional>
 #include <iostream>
-#include <iterator>
-#include <list>
-#include <map>
-#include <queue>
-#include <set>
-#include <sstream>
-#include <stack>
-#include <string>
 #include <vector>
+#include <algorithm>
 using namespace std;
-vector<vector<int>> linkedArr; 
-vector<bool> visited;
-vector<int> dist;
-vector<int> answerArr;
-void bfs(int startNode)
-{
-    queue<int> Q;
-    Q.push(startNode);
-    visited[startNode] = true;
-    dist[startNode] = 0;
-    while (!Q.empty())
-    {
-        int cur = Q.front(); Q.pop();
-        for (int i = 0; i < linkedArr[cur].size(); i++)
-        {
-            int next = linkedArr[cur][i];
-            if (!visited[next])
-            {
-                Q.push(next);
-                visited[next] = true;
-                dist[next] = dist[cur] + 1;
+const int INF = 1e9;
+
+int main() {
+    int N, M;
+    cin >> N >> M;
+    vector<vector<int>> dist(N+1, vector<int>(N+1, INF));
+    for (int i = 1; i <= N; i++) dist[i][i] = 0;
+
+    for (int i = 0; i < M; i++) {
+        int a, b;
+        cin >> a >> b;
+        dist[a][b] = 1;
+        dist[b][a] = 1;
+    }
+
+    // 플로이드-워셜
+    for (int k = 1; k <= N; k++) {
+        for (int i = 1; i <= N; i++) {
+            for (int j = 1; j <= N; j++) {
+                dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
             }
         }
     }
-    int sum = 0;
-    for (int i = 1; i < dist.size(); i++)
-    {
-        sum += dist[i];
-    }
-    answerArr[startNode] = sum;
 
-}
-void clear()
-{
-    fill(visited.begin(), visited.end(), false);
-    fill(dist.begin(), dist.end(), 0);
-}
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-    int N, M;
-    cin >> N >> M;
-    linkedArr.resize(N + 1);
-    visited.resize(N + 1);
-    dist.resize(N + 1);
-    answerArr.resize(N + 1);
-    for (int i = 0; i < M; i++)
-    {
-        int start, end;
-        cin >> start >> end;
-        linkedArr[start].push_back(end);
-        linkedArr[end].push_back(start);
-    }
-    for (int i = 1; i <= N; i++)
-    {
-        bfs(i);
-        clear();
-    }
-    int minScore = *min_element(answerArr.begin() + 1, answerArr.end());
-    for (int i = 1; i <= N; i++)
-    {
-        if (answerArr[i] == minScore)
-        {
-            cout << i << endl;
-            return 0;
+    int minSum = INF, answer = 0;
+    for (int i = 1; i <= N; i++) {
+        int sum = 0;
+        for (int j = 1; j <= N; j++) {
+            sum += dist[i][j];
+        }
+        if (sum < minSum) {
+            minSum = sum;
+            answer = i;
         }
     }
+    cout << answer << endl;
 }
