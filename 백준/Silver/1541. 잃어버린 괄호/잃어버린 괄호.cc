@@ -1,37 +1,32 @@
 #include <iostream>
-#include <sstream>
+#include <string>
 using namespace std;
 
-int main() {
-    string s;
-    cin >> s;
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    string input;
+    cin >> input;
 
-    istringstream ss(s);
-    string num;
-    int result = 0, sum = 0;
+    int result = 0;
+    string num = "";
     bool minus = false;
 
-    while (getline(ss, num, '+')) {
-        size_t pos = num.find('-');
-        if (pos != string::npos) {
-            istringstream sub_ss(num);
-            string sub_num;
-            while (getline(sub_ss, sub_num, '-')) {
-                int n = stoi(sub_num);
-                if (minus) result -= n;
-                else {
-                    result += sum;
-                    sum = n;
-                    minus = true;
-                }
-            }
-        } else {
+    for (int i = 0; i <= input.size(); i++) {
+        // 숫자 끝 또는 문자열 마지막일 때
+        if (i == input.size() || input[i] == '+' || input[i] == '-') {
             int n = stoi(num);
             if (minus) result -= n;
-            else sum += n;
+            else result += n;
+            num = "";
         }
+        if (i == input.size()) break;
+        if (input[i] == '-') minus = true;
+        if (input[i] == '+' || input[i] == '-') continue;
+        num += input[i];
     }
-    result += sum;
-    cout << result;
+    cout << result << '\n';
     return 0;
 }
