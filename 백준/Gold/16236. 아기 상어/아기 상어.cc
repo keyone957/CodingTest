@@ -61,100 +61,70 @@ int main()
             }
         }
     }
-    //if (isOne == 1)//물고기가 하나밖에 없을때 그냥 bfs돌리기
-    //{
-    //    //그 하나를 향해서 최소값
-    //    while (!q.empty())
-    //    {
 
-    //        if (onlyOneFishPos.first == q.front().first && onlyOneFishPos.second == q.front().second)
-    //        {
-    //            cout << dist[q.front().first][q.front().second];
-    //            return 0;
-    //            //그 하나의 물고기를 잡으면 출력
-    //        }
-    //        for (int i = 0; i < 4; i++)
-    //        {
-    //            int nx = q.front().first + dx[i];
-    //            int ny = q.front().second + dy[i];
-    //            if (nx < 0 || ny < 0 || nx >= boardSize || ny >= boardSize) continue;
-    //            if (dist[nx][ny] != -1) continue;
-    //            if (board[nx][ny] > initSize) continue;
+    int totalTime = 0;
+    while (true)
+    {
+        clear();
+        queue<pair<int, int>> q;
+        q.push({ sharkX, sharkY });
+        dist[sharkX][sharkY] = 0;
 
-    //            dist[nx][ny] = dist[q.front().first][q.front().second] + 1;
-    //            q.push({ nx, ny });
-    //        }
-    //    }
-    //}
-    //else
-    //{
-        int totalTime = 0;
-        while (true)
-        {
-            clear();
-            queue<pair<int, int>> q;
-            q.push({ sharkX, sharkY });
-            dist[sharkX][sharkY] = 0;
+        int minDist = 1e9;
+        int fx = -1, fy = -1;
 
-            int minDist = 1e9;
-            int fx = -1, fy = -1;
+        // BFS: dist 모두 갱신 & 먹을 수 있는 가장 가까운 물고기 찾기
+        while (!q.empty()) {
+            int x = q.front().first;
+            int y = q.front().second;
+            q.pop();
 
-            // BFS: dist 모두 갱신 & 먹을 수 있는 가장 가까운 물고기 찾기
-            while (!q.empty()) {
-                int x = q.front().first;
-                int y = q.front().second;
-                q.pop();
+            for (int d = 0; d < 4; d++) {
+                int nx = x + dx[d];
+                int ny = y + dy[d];
 
-                for (int d = 0; d < 4; d++) {
-                    int nx = x + dx[d];
-                    int ny = y + dy[d];
+                if (nx < 0 || ny < 0 || nx >= boardSize || ny >= boardSize) continue;
+                if (dist[nx][ny] != -1) continue;
+                if (board[nx][ny] > initSize) continue;
 
-                    if (nx < 0 || ny < 0 || nx >= boardSize || ny >= boardSize) continue;
-                    if (dist[nx][ny] != -1) continue;
-                    if (board[nx][ny] > initSize) continue;
+                dist[nx][ny] = dist[x][y] + 1;
 
-                    dist[nx][ny] = dist[x][y] + 1;
-
-                    // 먹을 수 있는 물고기
-                    if (board[nx][ny] >= 1 && board[nx][ny] < initSize) {
-                        // 조건 1: 더 가까움
-                        if (dist[nx][ny] < minDist) {
-                            minDist = dist[nx][ny];
+                // 먹을 수 있는 물고기
+                if (board[nx][ny] >= 1 && board[nx][ny] < initSize) {
+                    // 조건 1: 더 가까움
+                    if (dist[nx][ny] < minDist) {
+                        minDist = dist[nx][ny];
+                        fx = nx;
+                        fy = ny;
+                    }
+                    // 조건 2: 거리가 같으면 위/왼쪽 우선
+                    else if (dist[nx][ny] == minDist) {
+                        if (nx < fx || (nx == fx && ny < fy)) {
                             fx = nx;
                             fy = ny;
                         }
-                        // 조건 2: 거리가 같으면 위/왼쪽 우선
-                        else if (dist[nx][ny] == minDist) {
-                            if (nx < fx || (nx == fx && ny < fy)) {
-                                fx = nx;
-                                fy = ny;
-                            }
-                        }
                     }
-                    q.push({ nx, ny });
                 }
-            }
-
-            // 더 이상 먹을 수 있는 물고기가 없으면 끝
-            if (fx == -1 && fy == -1) break;
-
-            // 먹는다: 상어 위치, 크기, eatCnt, 시간 갱신
-            sharkX = fx;
-            sharkY = fy;
-            board[fx][fy] = 0;
-            totalTime += minDist;
-            eatCnt++;
-
-            if (eatCnt == initSize)
-            {
-                initSize++;
-                eatCnt = 0;
+                q.push({ nx, ny });
             }
         }
-        cout << totalTime;
-        return 0;
-    //}
 
-    cout << "-1";
+        // 더 이상 먹을 수 있는 물고기가 없으면 끝
+        if (fx == -1 && fy == -1) break;
+
+        // 먹는다: 상어 위치, 크기, eatCnt, 시간 갱신
+        sharkX = fx;
+        sharkY = fy;
+        board[fx][fy] = 0;
+        totalTime += minDist;
+        eatCnt++;
+
+        if (eatCnt == initSize)
+        {
+            initSize++;
+            eatCnt = 0;
+        }
+    }
+    cout << totalTime;
     return 0;
 }
