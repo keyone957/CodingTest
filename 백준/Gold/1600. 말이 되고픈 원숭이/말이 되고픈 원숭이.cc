@@ -48,15 +48,9 @@ int main()
         int x = get<0>(cur);
         int y = get<1>(cur);
         int remainMove = get<2>(cur);
-        int d = dist[x][y][remainMove];//거리.
 
         if (x == H - 1 && y == W - 1) {
-            cout << d ;
-            return 0;
-        }
-
-        if (x == H - 1 && y == W - 1) { // 목표 도착
-            cout << d << '\n';
+            cout << dist[x][y][remainMove];
             return 0;
         }
 
@@ -68,15 +62,8 @@ int main()
                 int nx = x + sx[i];
                 int ny = y + sy[i];
                 if (nx < 0 || nx >= H || ny < 0 || ny >= W) continue;
-                if (arr[nx][ny] == 1) continue;
-                if (dist[nx][ny][remainMove - 1] != -1) continue;
-
-                dist[nx][ny][remainMove - 1] = d + 1;
-              /*  if (nx == H - 1 && ny == W - 1) 
-                {
-                    cout << dist[nx][ny][remainMove - 1] << '\n';
-                    return 0;
-                }*/
+                if (arr[nx][ny] == 1|| dist[nx][ny][remainMove - 1] != -1) continue;
+                dist[nx][ny][remainMove - 1] = dist[x][y][remainMove]+1;
                 Q.push({ nx, ny, remainMove - 1 });
             }
         }
@@ -87,18 +74,12 @@ int main()
             int nx = x + dx[j];
             int ny = y + dy[j];
             if (nx < 0 || nx >= H || ny < 0 || ny >= W) continue;
-            if (arr[nx][ny] == 1) continue;
-            if (dist[nx][ny][remainMove] != -1) continue;
-
-            dist[nx][ny][remainMove] = d + 1;
-           /* if (nx == H - 1 && ny == W - 1) {
-                cout << dist[nx][ny][remainMove] << '\n';
-                return 0;
-            }*/
+            if (arr[nx][ny] == 1|| dist[nx][ny][remainMove] != -1) continue;
+            dist[nx][ny][remainMove] = dist[x][y][remainMove] + 1;
             Q.push({ nx, ny, remainMove });
         }
     }
 
-    cout << -1 << '\n';
+    cout << -1;
     return 0;
 }
