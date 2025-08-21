@@ -1,68 +1,101 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <deque>
+#include <functional>
+#include <iostream>
+#include <iterator>
+#include <list>
+#include <map>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <string.h>
+#include <vector>
+#include <unordered_set>
+#include<unordered_map>
 using namespace std;
-
 int arr[201][201];
-int distv[201][201][31];
-
-int main() {
+int dist[201][201][31];//
+int main()
+{
     ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    memset(distv, -1, sizeof(distv));
-
-    int dx[4] = { 1, 0, -1, 0 };
-    int dy[4] = { 0, 1, 0, -1 };
-    int hx[8] = { -2,-1, 1, 2, 2, 1,-1,-2 };
-    int hy[8] = { -1,-2,-2,-1, 1, 2, 2, 1 };
+    cin.tie(NULL);
+    cout.tie(NULL);
+    memset(dist, -1, sizeof(dist));//-1로 3차원 배열 초기화
+    int dx[4] = { 1,0,-1,0 };
+    int dy[4] = { 0,1,0,-1 };
+    int sx[8] = { -2,-1,1,2,2,1,-1,-2 };
+    int sy[8] = { -1,-2,-2,-1,1,2,2,1 };
 
     int K, W, H;
-    cin >> K >> W >> H;
+    cin >> K;
+    cin >> W >> H;
 
-    for (int i = 0; i < H; ++i)
-        for (int j = 0; j < W; ++j)
+
+    for (int i = 0; i < H; i++)
+    {
+        for (int j = 0; j < W; j++)
+        {
             cin >> arr[i][j];
-
-    if (H == 1 && W == 1) {
-        cout << 0 << '\n';
-        return 0;
+        }
     }
+    queue<tuple<int, int, int>> Q;
+    Q.push({ 0,0,K });
+    dist[0][0][K] = 0;
+    while (!Q.empty())
+    {
+        tuple<int, int, int> cur = Q.front(); Q.pop();
+        int x = get<0>(cur);
+        int y = get<1>(cur);
+        int remainMove = get<2>(cur);
+        int d = dist[x][y][remainMove];//거리.
 
-    queue<tuple<int,int,int>> q; // (x, y, remainK)
-    q.push({0, 0, K});
-    distv[0][0][K] = 0;
-
-    while (!q.empty()) {
-        auto [x, y, k] = q.front(); q.pop();
-        int d = distv[x][y][k];
-
-        // 일반 4방향
-        for (int dir = 0; dir < 4; ++dir) {
-            int nx = x + dx[dir], ny = y + dy[dir];
-            if (nx < 0 || nx >= H || ny < 0 || ny >= W) continue;
-            if (arr[nx][ny] == 1) continue;
-            if (distv[nx][ny][k] != -1) continue;
-            distv[nx][ny][k] = d + 1;
-            if (nx == H - 1 && ny == W - 1) {
-                cout << distv[nx][ny][k] << '\n';
-                return 0;
-            }
-            q.push({nx, ny, k});
+        if (x == H - 1 && y == W - 1) {
+            cout << d ;
+            return 0;
         }
 
-        // 말 이동 8방향
-        if (k > 0) {
-            for (int dir = 0; dir < 8; ++dir) {
-                int nx = x + hx[dir], ny = y + hy[dir];
+        if (x == H - 1 && y == W - 1) { // 목표 도착
+            cout << d << '\n';
+            return 0;
+        }
+
+        // 말(나이트) 이동
+        if (remainMove > 0) 
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                int nx = x + sx[i];
+                int ny = y + sy[i];
                 if (nx < 0 || nx >= H || ny < 0 || ny >= W) continue;
                 if (arr[nx][ny] == 1) continue;
-                if (distv[nx][ny][k - 1] != -1) continue;
-                distv[nx][ny][k - 1] = d + 1;
-                if (nx == H - 1 && ny == W - 1) {
-                    cout << distv[nx][ny][k - 1] << '\n';
+                if (dist[nx][ny][remainMove - 1] != -1) continue;
+
+                dist[nx][ny][remainMove - 1] = d + 1;
+              /*  if (nx == H - 1 && ny == W - 1) 
+                {
+                    cout << dist[nx][ny][remainMove - 1] << '\n';
                     return 0;
-                }
-                q.push({nx, ny, k - 1});
+                }*/
+                Q.push({ nx, ny, remainMove - 1 });
             }
+        }
+
+        // 일반 4방향 이동
+        for (int j = 0; j < 4; j++)
+        {
+            int nx = x + dx[j];
+            int ny = y + dy[j];
+            if (nx < 0 || nx >= H || ny < 0 || ny >= W) continue;
+            if (arr[nx][ny] == 1) continue;
+            if (dist[nx][ny][remainMove] != -1) continue;
+
+            dist[nx][ny][remainMove] = d + 1;
+           /* if (nx == H - 1 && ny == W - 1) {
+                cout << dist[nx][ny][remainMove] << '\n';
+                return 0;
+            }*/
+            Q.push({ nx, ny, remainMove });
         }
     }
 
