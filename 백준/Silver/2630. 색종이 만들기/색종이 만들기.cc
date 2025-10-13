@@ -29,7 +29,6 @@ void func(int x, int y, int size)
             if (board[i][j] != first)
             {
                 isSame = false;
-                break;
             }
         }
         if (!isSame) break;
