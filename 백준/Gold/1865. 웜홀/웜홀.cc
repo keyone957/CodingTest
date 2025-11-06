@@ -108,7 +108,7 @@ int main()
         bool isCycle = false;
         for (int i = 1; i <= n; i++)
         {
-            if (minDist[i] == 1e9) continue;
+            //if (minDist[i] == 1e9) continue;
             for (int j = 0; j < graph[i].size(); j++)
             {
                 int end = graph[i][j].first;
