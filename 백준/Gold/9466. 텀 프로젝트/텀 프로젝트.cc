@@ -11,71 +11,78 @@
 #include <stack>
 #include <string>
 #include <vector>
+#include <unordered_set>
+#include<unordered_map>
+#include<math.h>
 using namespace std;
-vector<vector<int>> linkedArr;
+int t, n;
+vector<int> arr;
 vector<int> visited;
-vector<bool> done;//시작 노드가 dfs가 다 끝났는지 안끝났는지에 대한 벡터
-int person;
-int timestamp = 1;
+vector<bool> inCycle;
+/*
+각각 연결된 그래프가 한 사이클을 이루면 그 사이클에 있는 노드는 
+짝을 이룬것.
+자기 자신을 선택해도 그것또한 짝을 이룬것
+visited[]의 상태
+0 -> 아직 방문 안함
+1 -> 방문 중에 있음 (사이클 판단중에 있음)
+2 -> 사이클 안에 있다는걸 확인해서 이제 더이상 접근 할 필요 없음.
+*/
 void dfs(int node)
 {
-	//int timestamp = 1;
-	if (visited[node] != 0)
-	{
-		return;
-	}
-
-	//visited[node] = 1;
-
-	visited[node] = timestamp++;
-	int start = linkedArr[node][0];
-	if (visited[start] == 0/*이미 방문한 노드*/)
-	{
-		dfs(start);
-	}
-	else if (!done[start])
-	{
-		person += (timestamp - 1) - visited[start] + 1;
-	}
-
-	done[node] = true;
+    visited[node] = 1;// 현재 노드를 사이클 판단 상태로 변경.
+    int next = arr[node];
+    if (visited[next] == 0)
+    {
+        dfs(next);
+    }
+    else if (visited[next] == 1)//
+    {
+        for (int i = next; i != node; i = arr[i])//i 가 자기 자신이 될때 까지 반복.
+        {
+            inCycle[i] = true;
+        }
+        inCycle[node] = true; // 맨 마지막에 자기 자신도 포함 
+    }
+    visited[node] = 2;
 }
 int main()
 {
-	ios::sync_with_stdio(false);
-	cin.tie(NULL);
-	cout.tie(NULL);
-	int count;
-	cin >> count;
-	for (int i = 0; i < count; i++)
-	{
-		int nodeCount;
-		cin >> nodeCount;
-		timestamp = 1;
-		/*linkedArr.resize(nodeCount + 1, {});
-		visited.resize(nodeCount + 1,0);
-		done.resize(nodeCount + 1,false);*/
-		linkedArr.assign(nodeCount + 1, vector<int>());
-		visited.assign(nodeCount + 1, 0);
-		done.assign(nodeCount + 1, false);
-		person = 0;
-		for (int i = 1; i < nodeCount + 1; i++)
-		{
-			int end;
-			cin >> end;
-			linkedArr[i].push_back(end);
-		}
-		for (int a = 1; a < nodeCount + 1; a++)
-		{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    cin >> t;
 
-			if (visited[a] == 0)
-			{
-				dfs(a);
-			}
-		}
-		cout << nodeCount-person<<"\n";
-		//person = 0;
+    while (t--)
+    {
+        cin >> n;
+        arr.assign(n + 1,0);
+        visited.assign(n + 1, 0);
+        inCycle.assign(n + 1, false);
 
-		//cout << person;
-	}
+        for (int i = 1; i <= n; i++)
+        {
+            int input;
+            cin >> input;
+            arr[i] = input;
+        }
+
+        for (int i = 1; i <= n; i++)
+        {
+            if (visited[i] == 0)
+            {
+                dfs(i);
+            }
+        }
+        int answer = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            if (!inCycle[i])// 이 값이 false면 현재 팀을 이루지 못한 인원임
+            {
+                answer++;
+            }
+        }
+        cout << answer<<'\n';
+    }
+    
 }
