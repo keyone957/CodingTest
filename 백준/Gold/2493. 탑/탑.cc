@@ -14,44 +14,42 @@
 #include <unordered_set>
 #include<unordered_map>
 #include<math.h>
+#include<cstring>
 using namespace std;
 /*
-6 9 5 7 4 <-
-왼쪽 방향으로 레이저 신호 발사
+각 위치에서 왼쪽으로 레이저를 쏜다 했을 때 자신 보다 높은 곳에 레이저를 송신함
+이제 현재 탑에서 레이저 수신을 받는 위치를 출력
+만일 레이저 신호를 수신하지 않으면 0출력
 
 */
-stack<pair<int,int>> tower;//높이, 타워 index
-int answer[500000];
+int n;
+int tower[500001];
+pair<int, int> tinfo;
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int n;
     cin >> n;
-    for (int i = 0; i < n; i++)
-    {   
-        int input;
-        cin >> input;
-        int index=0;
-        while (!tower.empty()&&tower.top().first < input)
+    for (int i = 1; i <= n; i++)
+    {
+        cin >> tower[i];
+    }
+    stack<pair<int,int>> s;
+    for (int i = 1; i <= n; i++)
+    {
+        while (!s.empty()&&s.top().first<tower[i])
         {
-            index++;
-            tower.pop();
+            s.pop();
         }
-        if (tower.empty())
+        if (s.empty())
         {
-            answer[i] = 0;
+            cout << 0 << ' ';
         }
         else
         {
-            answer[i] = tower.top().second + 1;
+            cout << s.top().second<<' ';
         }
-        tower.push({ input,i });
-
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout << answer[i] << ' ';
+        s.push({ tower[i],i });
     }
 }
