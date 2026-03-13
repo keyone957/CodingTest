@@ -13,34 +13,35 @@
 #include <vector>
 #include <unordered_set>
 #include<unordered_map>
+#include<math.h>
+#include<cstring>
 using namespace std;
+int a, b;
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    long long A, B;
-    cin >> A >> B;
-    queue<pair<long long, int>>q;//현재 값,  연산 횟수
-    q.push({ A,1 });
+    cin >> a >> b;
+    queue<pair<long long , int>> q;
+    q.push({ a,1 });//현재 수, 연산횟수
     while (!q.empty())
     {
-        pair<long long, int> cur = q.front();
+        pair<long long , int> cur = q.front();
         q.pop();
-        if (cur.first == B)
+        if (cur.first == b)
         {
-            cout << cur.second;
+            cout << cur.second ;
             return 0;
         }
-        if (cur.first*2<= B)
+        if ((cur.first) * 2 <= b)
         {
-            q.push({ cur.first*2,cur.second + 1 });
+            q.push({ cur.first * 2,cur.second + 1 });
         }
-        if ((cur.first *10)+1 <= B)
+        if((cur.first*10)+1<=b)
         {
-            q.push({ (cur.first * 10) + 1,cur.second + 1 });
+            q.push({ cur.first * 10 + 1,cur.second + 1 });
         }
     }
     cout << -1;
-    return 0;
 }
