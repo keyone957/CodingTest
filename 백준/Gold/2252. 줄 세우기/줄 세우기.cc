@@ -13,41 +13,47 @@
 #include <vector>
 #include <unordered_set>
 #include<unordered_map>
+#include<math.h>
+#include<cstring>
 using namespace std;
-int N, M;
-vector<int> linkedArr[32001];// 그래프 저장할 배열
-int inDegreeCnt[32001];// indgree수 저장해 놓을 배열
-queue<int> q;//indgree횟수가 0인 정점을 저장해 놓을 큐
-vector<int> result;// 결과 배열
+int indegree[32001];
+vector<int> input[32001];
+queue<int> q;
+vector<int>result;
+int n, m;
+/*
+번호 a가  b 앞에 서야한다는 의미
+*/
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    cin >> N >> M;
-    for (int i = 0; i < M; i++)
+    cin >>n >> m;
+    for (int i = 0; i < m; i++)
     {
         int start, end;
         cin >> start >> end;
-        linkedArr[start].push_back(end);
-        inDegreeCnt[end]++;
+        input[start].push_back(end);
+        indegree[end]++;
     }
-    for (int i = 1; i <= N; i++)
+    for (int i = 1; i <= n; i++)
     {
-        if (inDegreeCnt[i] == 0)//indgree가 0인 정점을 큐에 삽입
+        if (indegree[i] == 0)
         {
             q.push(i);
         }
     }
     while (!q.empty())
     {
-        int cur = q.front(); q.pop();
+        int cur = q.front();
+        q.pop();
         result.push_back(cur);
-        for (int i = 0; i < linkedArr[cur].size(); i++)
+        for (int i = 0; i < input[cur].size(); i++)
         {
-            int next = linkedArr[cur][i];
-            inDegreeCnt[next]--;
-            if (inDegreeCnt[next] == 0)
+            int next = input[cur][i];
+            indegree[next]--;
+            if (indegree[next] == 0)
             {
                 q.push(next);
             }
@@ -55,6 +61,6 @@ int main()
     }
     for (int i = 0; i < result.size(); i++)
     {
-        cout << result[i] << ' ';
+        cout << result[i]<<' ';
     }
 }
