@@ -16,19 +16,20 @@
 #include<math.h>
 #include<cstring>
 using namespace std;
-int x;
-int dp[1000001];
-//i에 도달 했을때 최소 연산 횟수
+int dp[1000003];//i숫자까지 왔을때 연산회수
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    cin >> x;
-    for (int i = 2; i <= x; i++)
+
+    int n;
+    cin >> n;
+    //dp[1] = 1;
+    for (int i = 2; i <= n; i++)
     {
-        dp[i]=dp[i-1]+ 1;
-        if (i % 3 == 0)
+        dp[i] = dp[i-1] +1;
+        if (i% 3 == 0)
         {
             dp[i] = min(dp[i], dp[i / 3] + 1);
         }
@@ -37,5 +38,5 @@ int main()
             dp[i] = min(dp[i], dp[i / 2] + 1);
         }
     }
-    cout << dp[x];
+    cout << dp[n];
 }
