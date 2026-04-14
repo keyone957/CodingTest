@@ -11,31 +11,34 @@
 #include <stack>
 #include <string>
 #include <vector>
+#include <unordered_set>
+#include<unordered_map>
+#include<math.h>
+#include<cstring>
 using namespace std;
+int n, k;
+int arr[200001];
+int countArr[100001];
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int N, K;
-    cin >> N >> K;
-    int left = 0;
-    int right = 0;
-    int answer = 0;
-    vector<int> arr;
-    int countArr[100001] = {0};
-    arr.resize(N + 1);
-    for (int i = 0; i < N; i++)
+    cin >> n >> k;
+    for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-
-    while (right<N)
+    int left = 0;
+    int right = 0;
+    int count = 0;
+    while (right < n)
     {
-        if (countArr[arr[right]] < K)
+      
+        if (countArr[arr[right]] < k)
         {
             countArr[arr[right]]++;
-            answer = max(answer, right - left + 1);
+            count = max(count, right - left + 1);
             right++;
         }
         else
@@ -43,7 +46,7 @@ int main()
             countArr[arr[left]]--;
             left++;
         }
-    }
-    cout << answer;
 
+    }
+    cout << count;
 }
