@@ -13,31 +13,36 @@
 #include <vector>
 #include <unordered_set>
 #include<unordered_map>
+#include<math.h>
+#include<cstring>
 using namespace std;
+int n, m;
+vector<long long> arr;
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int N, M;
-    cin >> N >> M;
-    vector<long long> arr;
-    arr.resize(N);
+    cin >> n >> m;
 
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        long long num;
+        cin >> num;
+        arr.push_back(num);
     }
     sort(arr.begin(), arr.end());
-
-    int left = 0, right = 0;
+    int left = 0;
+    int right = 0;
     long long answer = 2e18;
-    while (left<=right&&right<N)
+    while (right < n && left < n)
     {
-        long long cur = arr[right] - arr[left];
-        if (cur >= M)
+        long long lValue = arr[left];
+        long long rValue = arr[right];
+        long long a = rValue - lValue;
+        if (a >= m)
         {
-            answer = min(cur, answer);
+            answer = min(answer, a);
             left++;
         }
         else
@@ -45,7 +50,8 @@ int main()
             right++;
         }
 
-
     }
     cout << answer;
+
+
 }
