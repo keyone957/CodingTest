@@ -1,34 +1,64 @@
-#include <iostream>
-#include <vector>
 #include <algorithm>
+#include <deque>
+#include <functional>
+#include <iostream>
+#include <iterator>
+#include <list>
+#include <map>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+#include <string>
+#include <vector>
+#include <unordered_set>
+#include<unordered_map>
+#include<math.h>
+#include<cstring>
 using namespace std;
+/*
 
-int main() {
+입력 
+2 
+10
+15
+
+출력
+20
+
+1개로만 버틸때
+-> 15가 최대
+
+만약 2개로 버틸때
+로프 a b 에 10 10 씩 걸림
+최대는 20
+
+30키로 든다 치면
+10 15 는 15 15로 들어야 하는데 a가 15를 못버팀
+따라서 정답 20
+
+*/
+int n;
+vector<int>arr;
+int answer;
+int main()
+{
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-
-    int N;
-    cin >> N;
-    vector<int> ropes(N);
-
-    // 각 로프의 최대 중량 입력받기
-    for (int i = 0; i < N; i++) {
-        cin >> ropes[i];
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int input;
+        cin >> input;
+        arr.push_back(input);
     }
+    sort(arr.begin(), arr.end());
 
-    // 오름차순 정렬 (가장 약한 로프부터)
-    sort(ropes.begin(), ropes.end());
-
-    int answer = 0;
-    // i번째부터 N-1번째까지 로프를 모두 사용한다고 할 때,
-    // 들 수 있는 무게는 ropes[i] * (N - i)
-    for (int i = 0; i < N; i++) {
-        int weight = ropes[i] * (N - i);
-        // 최대값 갱신
-        answer = max(answer, weight);
+    for (int i = 0; i < n; i++)
+    {
+        int weight = arr[i] * (n - i);
+        answer = max(weight, answer);
     }
-
-    cout << answer << '\n';
-    return 0;
+    cout << answer;
 }
