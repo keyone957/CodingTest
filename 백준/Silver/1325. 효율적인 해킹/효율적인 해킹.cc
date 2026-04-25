@@ -11,56 +11,62 @@
 #include <stack>
 #include <string>
 #include <vector>
+#include <unordered_set>
+#include<unordered_map>
+#include<math.h>
+#include<cstring>
 using namespace std;
-vector<vector<int>> linkedArr;
-vector<bool>visited;
-vector<int>visitCount;
+int n, m;
+vector<int> linkedArr[10001];
+int visitedCnt[10001];
+
 void bfs(int startNode)
 {
+    bool isVisited[10001] = {false};
     queue<int> q;
-    q.push(startNode);
-    visited[startNode] = true;
+    q.push({ startNode });
+    isVisited[startNode] = true;
     while (!q.empty())
     {
-        int cur = q.front();  q.pop();
+        int cur = q.front();
+        q.pop();
         for (int i = 0; i < linkedArr[cur].size(); i++)
         {
             int next = linkedArr[cur][i];
-            if (!visited[next])
+            if (!isVisited[next])
             {
-                q.push(next);
-                visitCount[next]++;// 방문할 때 마다 그 방문한 노드의 visit횟수를 늘려줌
-                visited[next] = true;
+                q.push({ next });
+                isVisited[next] = true;
+                visitedCnt[startNode]++;
             }
         }
     }
-
 }
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int N, M;
-    cin >> N >> M;
-    linkedArr.resize(N + 1);
-    visitCount.resize(N + 1);
-    visited.resize(N + 1);
-    for (int i = 0; i < M; i++)
+    cin >> n >> m;
+    for (int i = 0; i < m; i++)
     {
-        int start, end;
-        cin >> start >> end;
-        linkedArr[start].push_back(end);
+        int a, b;
+        cin >> a >> b;
+        linkedArr[b].push_back(a);
     }
-    for (int i = 0; i <= N; i++)
+
+    for (int i = 1; i <= n; i++)
     {
-        fill(visited.begin(), visited.end(), false);
         bfs(i);
     }
-    int maxValue = *max_element(visitCount.begin(), visitCount.end());
-    for (int i = 0; i <= N; i++)
+    int maxCnt = -1;
+    for (int i = 1; i <= n; i++)
     {
-        if (visitCount[i] == maxValue)
+        maxCnt = max(maxCnt, visitedCnt[i]);
+    }
+    for (int i = 1; i <= n; i++)
+    {
+        if (maxCnt == visitedCnt[i])
         {
             cout << i << ' ';
         }
