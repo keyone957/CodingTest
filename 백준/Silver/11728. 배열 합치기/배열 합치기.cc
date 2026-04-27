@@ -14,57 +14,59 @@
 #include <unordered_set>
 #include<unordered_map>
 #include<math.h>
+#include<cstring>
 using namespace std;
+int n, m;
+vector<int> a;
+vector<int> b;
+vector<int> resultArr;
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
-    int n, m;
     cin >> n >> m;
-    int size = n + m;
-    queue<int> a;
-    queue<int> b;
-    vector<int> arr;
+
     for (int i = 0; i < n; i++)
     {
-        int input;
-        cin >> input;
-        a.push(input);
+        int num;
+        cin >> num;
+        a.push_back(num);
     }
-    for (int i = 0; i < m; i++)
+    for (int j = 0; j < m; j++)
     {
-        int input;
-        cin >> input;
-        b.push(input);
+        int num;
+        cin >> num;
+        b.push_back(num);
     }
+    int aIdx = 0;
+    int bIdx = 0;
+    while (aIdx < n && bIdx < m)
+    {
 
-    while (!a.empty() && !b.empty())
-    {
-        if (a.front() < b.front())
+        if (a[aIdx] > b[bIdx])
         {
-            arr.push_back(a.front());
-            a.pop();
-
+            resultArr.push_back(b[bIdx]);
+            bIdx++;
         }
         else
         {
-            arr.push_back(b.front());
-            b.pop();
+            resultArr.push_back(a[aIdx]);
+            aIdx++;
         }
     }
-    while (!a.empty())
+    while (aIdx < n)
     {
-        arr.push_back(a.front());
-        a.pop();
+        resultArr.push_back(a[aIdx]);
+        aIdx++;
     }
-    while (!b.empty())
+    while (bIdx < m)
     {
-        arr.push_back(b.front());
-        b.pop();
+        resultArr.push_back(b[bIdx]);
+        bIdx++;
     }
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < resultArr.size(); i++)
     {
-        cout << arr[i]<<' ';
+        cout << resultArr[i] << ' ';
     }
 }
