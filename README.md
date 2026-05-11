@@ -5,6 +5,7 @@
 ## Array
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 ## Hash Table
 |  |
@@ -14,4 +15,12 @@
 |  |
 | ------- |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
+## Two Pointers
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
