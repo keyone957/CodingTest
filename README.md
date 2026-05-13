@@ -32,8 +32,17 @@
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
+| [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 ## Topological Sort
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
+## Math
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 <!---LeetCode Topics End-->
