@@ -40,9 +40,15 @@
 ## Math
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/keyone957/CodingTest/tree/master/0070-climbing-stairs) |
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/keyone957/CodingTest/tree/master/0070-climbing-stairs) |
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/keyone957/CodingTest/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
