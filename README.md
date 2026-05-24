@@ -5,6 +5,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
@@ -12,6 +13,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 ## Graph Theory
 |  |
