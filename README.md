@@ -9,6 +9,7 @@
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 ## Hash Table
 |  |
@@ -54,6 +55,7 @@
 | [0070-climbing-stairs](https://github.com/keyone957/CodingTest/tree/master/0070-climbing-stairs) |
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 ## Memoization
 |  |
 | ------- |
@@ -66,4 +68,8 @@
 |  |
 | ------- |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
+## Backtracking
+|  |
+| ------- |
+| [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 <!---LeetCode Topics End-->
