@@ -7,6 +7,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
+| [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
@@ -33,6 +34,7 @@
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 ## Breadth-First Search
@@ -70,9 +72,15 @@
 ## Matrix
 |  |
 | ------- |
+| [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 ## Backtracking
 |  |
 | ------- |
+| [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
+## String
+|  |
+| ------- |
+| [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
