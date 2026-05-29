@@ -13,6 +13,7 @@
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/keyone957/CodingTest/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Hash Table
 |  |
 | ------- |
@@ -53,6 +54,7 @@
 | ------- |
 | [0070-climbing-stairs](https://github.com/keyone957/CodingTest/tree/master/0070-climbing-stairs) |
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/keyone957/CodingTest/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Dynamic Programming
 |  |
 | ------- |
