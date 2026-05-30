@@ -6,6 +6,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
+| [0004-median-of-two-sorted-arrays](https://github.com/keyone957/CodingTest/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
@@ -85,4 +86,12 @@
 |  |
 | ------- |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
+## Binary Search
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/keyone957/CodingTest/tree/master/0004-median-of-two-sorted-arrays) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/keyone957/CodingTest/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
