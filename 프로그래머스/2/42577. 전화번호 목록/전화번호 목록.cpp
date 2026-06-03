@@ -67,7 +67,6 @@ bool find(string& s)
 }
 
 bool solution(vector<string> phone_book) {
-    sort(phone_book.begin(), phone_book.end());
     
     // 매 테스트 케이스마다 크기 할당 및 초기화
     unused = 2;
