@@ -14,6 +14,7 @@
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
+| [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/keyone957/CodingTest/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Hash Table
@@ -32,10 +33,12 @@
 | ------- |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/keyone957/CodingTest/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 ## Greedy
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
+| [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -112,4 +115,8 @@
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
+## Sorting
+|  |
+| ------- |
+| [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 <!---LeetCode Topics End-->
