@@ -8,6 +8,7 @@
 | [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/keyone957/CodingTest/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
+| [0078-subsets](https://github.com/keyone957/CodingTest/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/keyone957/CodingTest/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -88,6 +89,7 @@
 ## Backtracking
 |  |
 | ------- |
+| [0078-subsets](https://github.com/keyone957/CodingTest/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 ## String
@@ -119,4 +121,8 @@
 |  |
 | ------- |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/keyone957/CodingTest/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
