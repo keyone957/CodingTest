@@ -17,6 +17,7 @@
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
+| [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/keyone957/CodingTest/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Hash Table
 |  |
@@ -47,6 +48,7 @@
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
+| [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -54,6 +56,7 @@
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
+| [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Topological Sort
 |  |
 | ------- |
@@ -81,11 +84,13 @@
 |  |
 | ------- |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
+| [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Matrix
 |  |
 | ------- |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
+| [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Backtracking
 |  |
 | ------- |
@@ -125,4 +130,8 @@
 |  |
 | ------- |
 | [0078-subsets](https://github.com/keyone957/CodingTest/tree/master/0078-subsets) |
+## Counting
+|  |
+| ------- |
+| [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 <!---LeetCode Topics End-->
