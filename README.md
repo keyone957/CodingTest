@@ -16,6 +16,7 @@
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
+| [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/keyone957/CodingTest/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
@@ -56,6 +57,7 @@
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
+| [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Topological Sort
 |  |
@@ -90,6 +92,7 @@
 | ------- |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
+| [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Backtracking
 |  |
