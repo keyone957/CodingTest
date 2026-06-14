@@ -16,6 +16,7 @@
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
+| [0704-binary-search](https://github.com/keyone957/CodingTest/tree/master/0704-binary-search) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 | [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
@@ -119,6 +120,7 @@
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/keyone957/CodingTest/tree/master/0004-median-of-two-sorted-arrays) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/keyone957/CodingTest/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0704-binary-search](https://github.com/keyone957/CodingTest/tree/master/0704-binary-search) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 ## Divide and Conquer
 |  |
