@@ -35,6 +35,7 @@
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 ## Two Pointers
 |  |
@@ -55,6 +56,7 @@
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Breadth-First Search
 |  |
@@ -64,6 +66,7 @@
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Topological Sort
@@ -87,6 +90,7 @@
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 ## Memoization
 |  |
 | ------- |
@@ -156,8 +160,13 @@
 |  |
 | ------- |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 ## Sliding Window
 |  |
 | ------- |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
+## Shortest Path
+|  |
+| ------- |
+| [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 <!---LeetCode Topics End-->
