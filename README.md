@@ -17,6 +17,7 @@
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
+| [0695-max-area-of-island](https://github.com/keyone957/CodingTest/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/keyone957/CodingTest/tree/master/0704-binary-search) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
@@ -55,6 +56,7 @@
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0695-max-area-of-island](https://github.com/keyone957/CodingTest/tree/master/0695-max-area-of-island) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
@@ -65,6 +67,7 @@
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
+| [0695-max-area-of-island](https://github.com/keyone957/CodingTest/tree/master/0695-max-area-of-island) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
@@ -99,6 +102,7 @@
 |  |
 | ------- |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
+| [0695-max-area-of-island](https://github.com/keyone957/CodingTest/tree/master/0695-max-area-of-island) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 ## Matrix
@@ -107,6 +111,7 @@
 | [0064-minimum-path-sum](https://github.com/keyone957/CodingTest/tree/master/0064-minimum-path-sum) |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/keyone957/CodingTest/tree/master/0130-surrounded-regions) |
+| [0695-max-area-of-island](https://github.com/keyone957/CodingTest/tree/master/0695-max-area-of-island) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
