@@ -9,20 +9,22 @@ public:
     int openLock(vector<string>& deadends, string target) {
         bool visited[10000]={};
         bool dead[10000]={};
+        // => deadends에 있는 문자열들을 구분하기 위한 bool배열
+        //원래 while문 안에서 계속 for문을 돌면서 확인했지만 => 시간초과로 오답
+        // 따라서 단순 bool배열을 갱신을 해 놓고 이 배열에서 확인하자. 
         int answer=0;
         bool isEnd=false;
         checkArr=deadends;
         for(int i=0;i<deadends.size();i++)
         {
-            if(deadends[i]=="0000") { isEnd=true; break; }
+            if(deadends[i]=="0000") { isEnd=true; return -1; }
+            //0000이 있으면 처음부터 모든 타겟에 도달 못함
             dead[stoi(deadends[i])]=true;
-           
-
         }
-        if(isEnd) 
-        {
-         return -1;
-        }
+        // if(isEnd) 
+        // {
+        //  return -1;
+        // }
         queue<pair<string,int>> q;
         //현재 자물쇠의 상태와 이동 횟수를 q에 저장
         q.push({"0000",0});
@@ -37,6 +39,8 @@ public:
                 break;
             }
             for(int i=0;i<4;i++)
+            //=> 각 자리 마다 증가 하거나 감소 하는 방향이 있으므로
+            //
             {
                 string upNext=cur.first;
                 string downNext=cur.first;
