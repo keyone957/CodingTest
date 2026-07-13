@@ -20,6 +20,7 @@
 | [0494-target-sum](https://github.com/keyone957/CodingTest/tree/master/0494-target-sum) |
 | [0695-max-area-of-island](https://github.com/keyone957/CodingTest/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/keyone957/CodingTest/tree/master/0704-binary-search) |
+| [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 | [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
@@ -32,6 +33,7 @@
 | [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
+| [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 ## Graph Theory
 |  |
@@ -70,6 +72,7 @@
 | [0279-perfect-squares](https://github.com/keyone957/CodingTest/tree/master/0279-perfect-squares) |
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0695-max-area-of-island](https://github.com/keyone957/CodingTest/tree/master/0695-max-area-of-island) |
+| [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
@@ -132,6 +135,7 @@
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
+| [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
 ## Binary Search
 |  |
 | ------- |
