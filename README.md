@@ -26,6 +26,7 @@
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 | [0994-rotting-oranges](https://github.com/keyone957/CodingTest/tree/master/0994-rotting-oranges) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
+| [1046-last-stone-weight](https://github.com/keyone957/CodingTest/tree/master/1046-last-stone-weight) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/keyone957/CodingTest/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Hash Table
@@ -179,6 +180,7 @@
 | ------- |
 | [0778-swim-in-rising-water](https://github.com/keyone957/CodingTest/tree/master/0778-swim-in-rising-water) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
+| [1046-last-stone-weight](https://github.com/keyone957/CodingTest/tree/master/1046-last-stone-weight) |
 ## Sliding Window
 |  |
 | ------- |
