@@ -29,6 +29,7 @@
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
 | [1046-last-stone-weight](https://github.com/keyone957/CodingTest/tree/master/1046-last-stone-weight) |
 | [1267-count-servers-that-communicate](https://github.com/keyone957/CodingTest/tree/master/1267-count-servers-that-communicate) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/keyone957/CodingTest/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/keyone957/CodingTest/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Hash Table
 |  |
@@ -38,12 +39,14 @@
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
 | [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/keyone957/CodingTest/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Graph Theory
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/keyone957/CodingTest/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/keyone957/CodingTest/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Two Pointers
 |  |
 | ------- |
@@ -84,6 +87,7 @@
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/keyone957/CodingTest/tree/master/0207-course-schedule) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/keyone957/CodingTest/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Math
 |  |
 | ------- |
@@ -143,6 +147,7 @@
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
 | [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/keyone957/CodingTest/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Binary Search
 |  |
 | ------- |
