@@ -52,6 +52,7 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
+| [0125-valid-palindrome](https://github.com/keyone957/CodingTest/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/keyone957/CodingTest/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/keyone957/CodingTest/tree/master/0189-rotate-array) |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
@@ -144,6 +145,7 @@
 |  |
 | ------- |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
+| [0125-valid-palindrome](https://github.com/keyone957/CodingTest/tree/master/0125-valid-palindrome) |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
