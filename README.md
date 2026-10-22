@@ -37,6 +37,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
+| [0242-valid-anagram](https://github.com/keyone957/CodingTest/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
 | [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
 | [0997-find-the-town-judge](https://github.com/keyone957/CodingTest/tree/master/0997-find-the-town-judge) |
@@ -148,6 +149,7 @@
 | [0125-valid-palindrome](https://github.com/keyone957/CodingTest/tree/master/0125-valid-palindrome) |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0242-valid-anagram](https://github.com/keyone957/CodingTest/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
 | [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/keyone957/CodingTest/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
@@ -175,6 +177,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/keyone957/CodingTest/tree/master/0242-valid-anagram) |
 | [0881-boats-to-save-people](https://github.com/keyone957/CodingTest/tree/master/0881-boats-to-save-people) |
 ## Bit Manipulation
 |  |
