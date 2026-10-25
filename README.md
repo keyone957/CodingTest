@@ -8,6 +8,7 @@
 | [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/keyone957/CodingTest/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/keyone957/CodingTest/tree/master/0011-container-with-most-water) |
+| [0014-longest-common-prefix](https://github.com/keyone957/CodingTest/tree/master/0014-longest-common-prefix) |
 | [0063-unique-paths-ii](https://github.com/keyone957/CodingTest/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/keyone957/CodingTest/tree/master/0064-minimum-path-sum) |
 | [0078-subsets](https://github.com/keyone957/CodingTest/tree/master/0078-subsets) |
@@ -145,6 +146,7 @@
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/keyone957/CodingTest/tree/master/0014-longest-common-prefix) |
 | [0079-word-search](https://github.com/keyone957/CodingTest/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/keyone957/CodingTest/tree/master/0125-valid-palindrome) |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
@@ -172,6 +174,7 @@
 ## Trie
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/keyone957/CodingTest/tree/master/0014-longest-common-prefix) |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/keyone957/CodingTest/tree/master/0211-design-add-and-search-words-data-structure) |
 ## Sorting
