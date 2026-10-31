@@ -18,6 +18,7 @@
 | [0134-gas-station](https://github.com/keyone957/CodingTest/tree/master/0134-gas-station) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/keyone957/CodingTest/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/keyone957/CodingTest/tree/master/0189-rotate-array) |
+| [0219-contains-duplicate-ii](https://github.com/keyone957/CodingTest/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/keyone957/CodingTest/tree/master/0239-sliding-window-maximum) |
 | [0322-coin-change](https://github.com/keyone957/CodingTest/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/keyone957/CodingTest/tree/master/0416-partition-equal-subset-sum) |
@@ -39,6 +40,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/keyone957/CodingTest/tree/master/0001-two-sum) |
 | [0208-implement-trie-prefix-tree](https://github.com/keyone957/CodingTest/tree/master/0208-implement-trie-prefix-tree) |
+| [0219-contains-duplicate-ii](https://github.com/keyone957/CodingTest/tree/master/0219-contains-duplicate-ii) |
 | [0242-valid-anagram](https://github.com/keyone957/CodingTest/tree/master/0242-valid-anagram) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
 | [0752-open-the-lock](https://github.com/keyone957/CodingTest/tree/master/0752-open-the-lock) |
@@ -202,6 +204,7 @@
 ## Sliding Window
 |  |
 | ------- |
+| [0219-contains-duplicate-ii](https://github.com/keyone957/CodingTest/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/keyone957/CodingTest/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/keyone957/CodingTest/tree/master/0424-longest-repeating-character-replacement) |
 ## Shortest Path
